@@ -2,8 +2,8 @@ document.getElementById("calculateBtn").addEventListener("click", function () {
     const score = parseInt(document.getElementById("score").value);
     const resultElement = document.getElementById("result");
 
-    if (isNaN(score) || score < 0 || score > 428) {
-        resultElement.textContent = "Please enter a valid score between 0 and 100.";
+    if (isNaN(score) || score < 0 || score > 427.50) {
+        resultElement.textContent = "Please enter a valid score between 0 and 427.";
         resultElement.style.color = "red";
         resultElement.classList.remove("visible");
         setTimeout(() => resultElement.classList.add("visible"), 10); 
